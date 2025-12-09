@@ -4,6 +4,15 @@
              x:Class="MauiLoginApp.RegisterPage"
              Title="RegisterPage" Padding="20" BackgroundColor="White">
     <VerticalStackLayout>
+        <Image
+     Source="register.jpg"
+     Aspect="AspectFill"
+     HeightRequest="200"
+     WidthRequest="200"
+     HorizontalOptions="Center"
+     Margin="0,0,0,20"
+     />
+
         <Label 
             Text="Create Account"
             VerticalOptions="Center" 
