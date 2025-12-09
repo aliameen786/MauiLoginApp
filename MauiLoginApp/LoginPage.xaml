@@ -5,10 +5,10 @@
              Title="LoginPage" Padding="20" BackgroundColor="White">
     <VerticalStackLayout Padding="30" VerticalOptions="Center" Spacing="20">
         <Image
-            Source="dotnet_bot.png"
+            Source="login.jpg"
             Aspect="AspectFill"
-            HeightRequest="64"
-            WidthRequest="64"
+            HeightRequest="200"
+            WidthRequest="200"
             HorizontalOptions="Center"
             Margin="0,0,0,20"
             />
