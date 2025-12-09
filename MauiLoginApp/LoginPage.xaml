@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLoginApp.LoginPage"
+             Title="LoginPage" Padding="20" BackgroundColor="White">
+    <VerticalStackLayout Padding="30" VerticalOptions="Center" Spacing="20">
+        <Image
+            Source="dotnet_bot.png"
+            Aspect="AspectFill"
+            HeightRequest="64"
+            WidthRequest="64"
+            HorizontalOptions="Center"
+            Margin="0,0,0,20"
+            />
+
+        <Label 
+            Text="Welcome Back!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" TextColor="#333" FontAttributes="Bold" FontSize="32"/>
+
+        <Label Text="Username" FontSize="14" TextColor="#333"></Label>
+        <Border Stroke="#ddd" StrokeThickness="1" Background="white" StrokeShape="RoundRectangle 10">
+            <Entry
+                x:Name="UsernameEntry"
+                Placeholder="Enter your username"
+                FontSize="16"
+                TextColor="#333"
+                BackgroundColor="Transparent"
+                PlaceholderColor="#aaa"
+                />
+
+        </Border>
+
+        <Label Text="Password" FontSize="14" TextColor="#333"></Label>
+        <Border Stroke="#ddd" StrokeThickness="1" Background="white" StrokeShape="RoundRectangle 10">
+            <Entry
+          x:Name="PasswordEntry"
+          Placeholder="Enter your password"
+                IsPassword="True"
+          FontSize="16"
+          TextColor="#333"
+          BackgroundColor="Transparent"
+          PlaceholderColor="#aaa"
+          />
+        </Border>
+
+        <Button Text="Login" BackgroundColor="#007AFF" TextColor="White" FontSize="18" CornerRadius="10" HeightRequest="50" Clicked="OnLoginButtonClicked"/>
+        <!--Clicked="OnLoginButtonClicked"-->
+
+        <Label Text="Don't have an account? Register"
+               HorizontalOptions="Center"
+               TextColor="#4e8ef7"
+               FontSize="14">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnRegisterLabelTapped"/>
+                <!--Tapped="OnRegisterLabelTapped"-->
+            </Label.GestureRecognizers>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>
